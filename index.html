@@ -16,30 +16,32 @@
     </p>
 
     <main>
-      <form class="SalaryForm">
+      <div class="SalaryForm">
         <h2>Employee Salary Form</h2>
 
-        <div class="Details">
-          <h3 for="name">Employee Name:</h3>
-          <input type="text" id="name" />
-        </div>
+        <form class="salary-form">
+          <div class="Details">
+            <h3 for="name">Employee Name:</h3>
+            <input type="text" id="name" required />
+          </div>
 
-        <div class="Details">
-          <h3 for="hours">Hours Worked:</h3>
-          <input type="number" id="hours" />
-        </div>
+          <div class="Details">
+            <h3 for="hours">Hours Worked:</h3>
+            <input type="number" id="hours" required />
+          </div>
 
-        <div class="Details">
-          <h3 for="rate">Rate per Hour:</h3>
-          <input type="number" id="rate" />
-        </div>
+          <div class="Details">
+            <h3 for="rate">Rate per Hour:</h3>
+            <input type="number" id="rate" required />
+          </div>
 
-        <div class="CalculateSalary">
-          <button type="button" id="solve" onclick="solve()">
-            Calculate Salary
-          </button>
-        </div>
-      </form>
+          <div class="CalculateSalary">
+            <button type="button" id="solve" onclick="solve()">
+              Calculate Salary
+            </button>
+          </div>
+        </form>
+      </div>
 
       <div class="SalaryDetails">
         <h2>Salary Details</h2>
