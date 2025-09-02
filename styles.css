@@ -49,8 +49,8 @@ body {
 .planet {
   position: fixed;
   z-index: -1;
-  width: 40rem;
-  height: 40rem;
+  width: 40vw;
+  height: 40vw;
   top: -20%;
   left: -10%;
   border-radius: 50%;
@@ -61,8 +61,8 @@ body {
 .planet2 {
   position: fixed;
   z-index: -1;
-  width: 40rem;
-  height: 40rem;
+  width: 40vw;
+  height: 40vw;
   top: 60%;
   left: 80%;
   border-radius: 50%;
