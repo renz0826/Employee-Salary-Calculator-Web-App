@@ -8,6 +8,48 @@
     <title>Employee Salary Calculator</title>
   </head>
   <body>
+    <h1 class="Title">Employee Salary Calculator</h1>
+
+    <p class="Instructions">
+      Instructions: Input the employee details on the left panel and click
+      "Calculate Salary" for the calculated results.
+    </p>
+
+    <main>
+      <form class="SalaryForm">
+        <h2>Employee Salary Form</h2>
+
+        <div class="Details">
+          <h3 for="name">Employee Name:</h3>
+          <input type="text" id="name" />
+        </div>
+
+        <div class="Details">
+          <h3 for="hours">Hours Worked:</h3>
+          <input type="number" id="hours" />
+        </div>
+
+        <div class="Details">
+          <h3 for="rate">Rate per Hour:</h3>
+          <input type="number" id="rate" />
+        </div>
+
+        <div class="CalculateSalary">
+          <button type="button" id="solve" onclick="solve()">
+            Calculate Salary
+          </button>
+        </div>
+      </form>
+
+      <div class="SalaryDetails">
+        <h2>Salary Details</h2>
+
+        <h3>Employee Name: <span id="out-name"></span></h3>
+        <h3>Hours Worked: <span id="out-hours"></span></h3>
+        <h3>Rate per Hour: <span id="out-rate"></span></h3>
+        <h2>Total Salary: <span id="out-salary"></span></h2>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
