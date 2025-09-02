@@ -15,6 +15,21 @@ function solve() {
   document.getElementById("out-salary").textContent = "₱ " + salary.toFixed(2);
 }
 
+// Disables number input for name
+document.getElementById("name").addEventListener("keypress", function (e) {
+  if (e.key >= "0" && e.key <= "9") {
+    e.preventDefault();
+  }
+});
+
+// Event listener for clicking enter
+document.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    solve();
+  }
+});
+
+// Preventing reload and triggers function solve
 document.querySelector(".SalaryForm").addEventListener("submit", function (e) {
   e.preventDefault();
   solve();
